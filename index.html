@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
+  <header class="site-header" id="mainHeader">
+    <div class="header-inner">
       <div class="brand">
         <div class="logo-dot"></div>
         <div>
@@ -244,5 +244,22 @@
   </footer>
 
   <script src="script.js"></script>
+  
+  <script>
+  let lastScrollY = window.scrollY;
+  const header = document.getElementById('mainHeader');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > lastScrollY) {
+      // Scrolling down → hide header
+      header.classList.add('hide');
+    } else {
+      // Scrolling up → show header
+      header.classList.remove('hide');
+    }
+    lastScrollY = window.scrollY;
+  });
+</script>
+
 </body>
 </html>

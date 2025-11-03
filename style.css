@@ -30,12 +30,19 @@ body{
 
 /* header */
 .site-header{
-  position:sticky;
-  top:0;
-  z-index:80;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
   backdrop-filter: blur(6px);
-  background: linear-gradient(180deg, rgba(7,18,51,0.6), rgba(7,18,51,0.28));
-  border-bottom:1px solid rgba(255,255,255,0.03);
+  background: linear-gradient(180deg, rgba(7,18,51,0.85), rgba(7,18,51,0.6));
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  transition: top 0.9s ease;
+}
+.site-header.hide {
+  top: -100px; /* move header off the screen */
 }
 .header-inner{
   display:flex;
