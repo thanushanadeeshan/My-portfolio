@@ -6,12 +6,19 @@
   <title>Thanusha Nadeeshan — Cybersecurity Portfolio</title>
   <meta name="description" content="Thanusha Nadeeshan — Cybersecurity & Cloud | ELK Stack, Kali, Threat Detection" />
   <link rel="stylesheet" href="style.css" />
+  
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function(){
+      emailjs.init("VlHMr-svyfpdudwGO");
+    })();
+  </script>
 </head>
 <body>
   <header class="site-header" id="mainHeader">
-    <div class="header-inner">
+    <div class="header-inner container">
       <div class="brand">
-        <div class="logo-dot"></div>
+        <div class="logo-dot">>_</div>
         <div>
           <div class="name">Thanusha Nadeeshan</div>
           <div class="role">Cybersecurity Engineer | Network Security Enthusiast</div>
@@ -33,7 +40,6 @@
   </header>
 
   <main>
-    <!-- HERO -->
     <section id="home" class="hero">
       <div class="container hero-grid">
         <div class="hero-left">
@@ -41,8 +47,8 @@
           <p class="hero-sub">Hardworking and project-oriented final-year cybersecurity undergraduate with strengths in network defense, threat detection, and risk assessment. Skilled with Kali Linux, Wireshark & ELK Stack for real-time monitoring and analysis.</p>
           <div class="hero-cta">
             <a class="btn" href="resume.pdf" download>Download CV</a>
-            <a class="btn-outline" href="https://github.com/thanushanadeeshan" target="_blank" rel="noreferrer">GitHub</a>
-            <a class="btn-outline" href="https://www.linkedin.com/in/thanusha-akmeemana-78072ba1" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="btn-outline" href="https://github.com/thanushanadeeshan" target="_blank">GitHub</a>
+            <a class="btn-outline" href="https://www.linkedin.com/in/thanusha-akmeemana-78072ba1" target="_blank">LinkedIn</a>
           </div>
           <ul class="hero-skills">
             <li>Kali Linux</li>
@@ -52,28 +58,14 @@
           </ul>
         </div>
 
-        <div class="hero-right" aria-hidden="true">
-          <!-- stylized laptop mock -->
-          <div class="laptop">
-            <div class="screen">
+        <div class="hero-right">
+          <div class="laptop-static">
+            <div class="screen-static">
               <div class="screen-overlay">
-                <!-- floating cards -->
-                <div class="card c1">
-                  <strong>Cybersecurity Dashboard</strong>
-                  <small>Real-time ELK analytics</small>
-                </div>
-                <div class="card c2">
-                  <strong>Threat Detection</strong>
-                  <small>Isolation Forest / Autoencoder</small>
-                </div>
-                <div class="card c3">
-                  <strong>Network Defense</strong>
-                  <small>Traffic Monitoring & Incident Response</small>
-                </div>
-                <div class="card c5">
-                  <strong>AI Automation</strong>
-                  <small>Leveraging AI for Smart Security</small>
-                </div>
+                <div class="card c1"><strong>Cybersecurity Dashboard</strong><small>Real-time ELK analytics</small></div>
+                <div class="card c2"><strong>Threat Detection</strong><small>Isolation Forest / Autoencoder</small></div>
+                <div class="card c3"><strong>Network Defense</strong><small>Traffic Monitoring & Incident Response</small></div>
+                <div class="card c5"><strong>AI Automation</strong><small>Leveraging AI for Smart Security</small></div>
               </div>
             </div>
             <div class="base"></div>
@@ -82,16 +74,15 @@
       </div>
     </section>
 
-    <!-- ABOUT -->
     <section id="about" class="section">
       <div class="container section-grid">
         <div class="card about-card">
           <h2>About Me</h2>
-          <p> Hardworking and project-oriented final-year cybersecurity undergraduate with a solid background in network defense, threat detection, and risk assessment. Familiar with developed security software including Kali Linux, Wireshark, and ELK Stack to monitor and analyze in real-time.  Enthusiastic about the creation of safe systems, experimentation with new technologies, and the resolution of intricate cybersecurity issues.</p>
+          <p>Hardworking and project-oriented final-year cybersecurity undergraduate with a solid background in network defense, threat detection, and risk assessment. Familiar with developed security software including Kali Linux, Wireshark, and ELK Stack to monitor and analyze in real-time. Enthusiastic about the creation of safe systems, experimentation with new technologies, and the resolution of intricate cybersecurity issues.</p>
           <ul class="about-list">
-            <li><strong>Location:</strong>Colombo, Sri Lanka.</li>
-            <li><strong>Education:</strong> SLTC Research University </br> Faculty of Computing & IT</li>
-            <li><strong>Contact:</strong> thanushanadeeshan1@gmail.com  </br> +94 75 039 5110 </br> +94 71 160 4538</li>
+            <li><strong>Location:</strong> Colombo, Sri Lanka</li>
+            <li><strong>Education:</strong> SLTC Research University <br> Faculty of Computing & IT</li>
+            <li><strong>Contact:</strong> thanushanadeeshan1@gmail.com <br> +94 75 039 5110 <br> +94 71 160 4538</li>
           </ul>
         </div>
 
@@ -110,7 +101,6 @@
       </div>
     </section>
 
-    <!-- SERVICES -->
     <section id="services" class="section section-alt">
       <div class="container">
         <h2 class="center">Services</h2>
@@ -127,15 +117,15 @@
             <h4>Network Infrastructure & Defense</h4>
             <p>Planning, configuring, and maintaining secure network environments with robust firewall, routing, and access control implementations.</p>
           </div>
-          <div class="service">
+          <div class="service-card">
             <h4>Incident Response & Reporting</h4>
             <p>Real-time threat response, forensic analysis, and documentation to support post-incident investigation and continuous improvement.</p>
           </div>
-          <div class="service">
+          <div class="service-card">
             <h4>System Hardening</h4>
             <p>Applying security best practices to operating systems, servers, and network devices to minimize attack surfaces and prevent exploitation.</p>
           </div>
-          <div class="service">
+          <div class="service-card">
             <h4>Risk Assessment & Compliance</h4>
             <p>Assessing cybersecurity maturity using frameworks like NIST, ensuring policy compliance, and strengthening security governance.</p>
           </div>
@@ -143,60 +133,56 @@
       </div>
     </section>
 
-    <!-- PROJECTS -->
     <section id="projects" class="section">
       <div class="container">
         <h2 class="center">Selected Projects</h2>
         <div class="projects-grid">
-          <article class="project">
-
+          <article class="project-card">
             <h3>Cybersecurity Dashboard with Analytics</h3>
             <p>ELK-based real-time dashboard for visualizing security alerts and trends; includes custom pipelines and alert prioritization.</p>
             <p class="meta">Tech: Elasticsearch, Kibana, Beats, Python</p>
-            <a class="link" href="#" target="_blank" rel="noreferrer">View Repo</a>
+            <a class="link" href="https://github.com/thanushanadeeshan/Automatic-Threat-Detection-ELK" target="_blank">View Repo</a>
           </article>
 
-          <article class="project">
+          <article class="project-card">
             <h3>NIC Decoder App</h3>
             <p>Mobile app that decodes Sri Lankan NIC numbers to extract birthdate, gender, age, and voting eligibility for both old and new formats.</p>
             <p class="meta">Tech: Flutter, Dart, GetX, GetStorage, intl</p>
-            <a class="link" href="https://github.com/thanushanadeeshan/NIC-Decoder" target="_blank" rel="noreferrer">View Repo</a> </br>
-            <a class="link" href="https://www.figma.com/proto/osQqqayVX3jBLsEgiWZNav/Untitled?node-id=6318&t=jMlNRO1mrbsZGjgS-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-nodeid=4%3A2&show-proto-sidebar=1 " target="_blank" rel="noreferrer">Figma preview</a>
+            <a class="link" href="https://github.com/thanushanadeeshan/NIC-Decoder" target="_blank">View Repo</a><br>
+            <a class="link" href="https://www.figma.com/proto/osQqqayVX3jBLsEgiWZNav/Untitled?node-id=6318&t=jMlNRO1mrbsZGjgS-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-nodeid=4%3A2&show-proto-sidebar=1" target="_blank">Figma preview</a>
           </article>
 
-          <article class="project">
+          <article class="project-card">
             <h3>Book Store App</h3>
             <p>Flutter app featuring a simple bookstore with multi-screen navigation using Bottom Navigation Bar and Drawer via GetX package.</p>
             <p class="meta">Tech: Flutter, Dart, GetX</p>
-            <a class="link" href="https://github.com/thanushanadeeshan/book_store" target="_blank" rel="noreferrer">View Repo</a></br>
-            <a class="link" href="https://www.figma.com/proto/9jHJzhF8fUCJSGXgjv7eEf/22ug1-0391_Book_Store?node-id=2-4&p=f&t=a7IY2f748OWFAwtw-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A4" target="_blank" rel="noreferrer">Figma preview</a>
+            <a class="link" href="https://github.com/thanushanadeeshan/book_store" target="_blank">View Repo</a><br>
+            <a class="link" href="https://www.figma.com/proto/9jHJzhF8fUCJSGXgjv7eEf/22ug1-0391_Book_Store?node-id=2-4&p=f&t=a7IY2f748OWFAwtw-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A4" target="_blank">Figma preview</a>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- AWARDS / ACHIEVEMENTS -->
     <section id="awards" class="section section-alt">
       <div class="container">
         <h2 class="center">Achievements</h2>
         <div class="achievements-grid">
-          <div class="award">
+          <div class="service-card">
             <h4>Final Year Project - ongoing</h4>
             <p>Designing a <strong>Cybersecurity Dashboard with Analytics</strong> and an <strong>Automated Threat Detection System</strong> using the ELK Stack and Machine Learning to monitor, detect, and visualize network-based attacks in real-time.</p>
           </div>
-          <div class="award">
+          <div class="service-card">
             <h4>Cybersecurity Workshop - Participant</h4>
-            <p>Engaged in a professional hands-on workshop covering <strong>network defense strategies, penetration testing techniques, and SIEM-based threat monitoring</strong>. Gained practical exposure to using Kali Linux and Wireshark for attack simulation and mitigation.</p>
+            <p>Engaged in a professional hands-on workshop covering network defense strategies, penetration testing techniques, and SIEM-based threat monitoring.</p>
           </div>
-          <div class="award">
+          <div class="service-card">
             <h4>Hackathon / CTF Challenge - Participant</h4>
-            <p>Developed <strong>incident response automation tools</strong> and <strong>log parsing utilities</strong> to identify and respond to potential intrusions rapidly. Collaborated in a time-bound environment emphasizing analytical thinking and teamwork under pressure.</p>
+            <p>Developed incident response automation tools and log parsing utilities to identify and respond to potential intrusions rapidly.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
     <section id="contact" class="section">
       <div class="container">
         <h2 class="center">Contact</h2>
@@ -207,59 +193,35 @@
             <p>Phone: +94 75 039 5110</p>
             <p>Phone: +94 71 160 4538</p>
             <div class="socials">
-              <a href="https://github.com/thanushanadeeshan" target="_blank" rel="noreferrer">GitHub</a>
-              <a href="https://www.linkedin.com/in/thanusha-akmeemana-78072ba1" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a href="https://github.com/thanushanadeeshan" target="_blank">GitHub</a>
+              <a href="https://www.linkedin.com/in/thanusha-akmeemana-78072ba1" target="_blank">LinkedIn</a>
             </div>
           </div>
 
           <form class="card contact-form" id="contactForm">
-            <label>
-              <span>Name</span>
-              <input type="text" name="name" placeholder="Your name" required>
-            </label>
-            <label>
-              <span>Email</span>
-              <input type="email" name="email" placeholder="you@example.com" required>
-            </label>
-            <label>
-              <span>Message</span>
-              <textarea name="message" rows="4" placeholder="Short message" required></textarea>
-            </label>
-            <button type="submit" class="btn">Send Message</button>
+            <label>Name</label>
+            <input type="text" name="from_name" placeholder="Your name" required>
+            <label>Email</label>
+            <input type="email" name="reply_to" placeholder="you@example.com" required>
+            <label>Message</label>
+            <textarea name="message" rows="4" placeholder="Short message" required></textarea>
+            <button type="submit" class="btn" id="submitBtn">Send Message</button>
           </form>
         </div>
       </div>
     </section>
-
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
       <div>© <span id="year"></span> Thanusha Nadeeshan</div>
       <div class="small-links">
-        <a href="https://github.com/thanushanadeeshan" target="_blank" rel="noreferrer">GitHub</a>
-        <a href="https://www.linkedin.com/in/thanusha-akmeemana-78072ba1" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://github.com/thanushanadeeshan" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/thanusha-akmeemana-78072ba1" target="_blank">LinkedIn</a>
       </div>
     </div>
   </footer>
 
   <script src="script.js"></script>
-  
-  <script>
-  let lastScrollY = window.scrollY;
-  const header = document.getElementById('mainHeader');
-
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > lastScrollY) {
-      // Scrolling down → hide header
-      header.classList.add('hide');
-    } else {
-      // Scrolling up → show header
-      header.classList.remove('hide');
-    }
-    lastScrollY = window.scrollY;
-  });
-</script>
-
 </body>
 </html>
